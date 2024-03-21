@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- <meta name="description" content="Free movie catalogue for you"> -->
+  <link rel="icon" href="./joeeen-logo.png">
+ 
+  <title>Joeen</title>
+</head>
+<body>
+  <header class="app-bar">
+    <div class="app-bar__menu">
+      <button id="hamburgerButton">☰</button>
+    </div>
+    <div class="app-bar__brand" id="brand">
+        <img class="app-bar_brand-logo" src="./joeeen-logo.png" alt="joeeen-logo">
+        <h1>Joeen</h1>
+    </div>
+    <div class="profile">
+      <a href="#/profile"><div class="avatar"></div></a>
+    </div>    
+    <nav id="navigationDrawer" class="app-bar__navigation">
+      <ul>
+        <li><a href="#/events">Events</a></li>
+        <li><a href="#/community">Community</a></li>
+        <li><a href="#/volunteer">Volunteer</a></li>
+        <li><a href="#/books">Books</a></li>
+        <li><a href="#/music">Music</a></li>
+        <li><a href="#/film">Film</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="mainContent">
+
+  </main>
+
+  <footer class="footer">
+    <div class="overlap">
+      <p class="element-bug-buster">©2024 Bug Busters | All Rights Reserved</p>
+    <div class="recommendation">
+      <div class="text-wrapper">Recommendation</div>
+      <div class="navigation">
+        <a href="#/events">Events</a><br />
+        <a href="#/community">Community</a><br />
+        <a href="#/volunteer">Volunteer</a><br />
+        <a href="#/books">Books</a><br />
+        <a href="#/music">Music</a><br />
+        <a href="#/film">Film</a>
+      </div>
+    </div>
+      <div class="contact">
+        <div class="div">Contact Us</div>
+        <div class="email">
+          <div class="overlap-group-wrapper">
+            <div class="overlap-group">
+              <div class="text-wrapper-2">Email</div>
+              <div class="text-wrapper-3">joeenwithus@gmail.com</div>
+            </div>
+          </div>
+        </div>
+        <div class="telepon">
+          <div class="overlap-group-wrapper">
+            <div class="overlap-group">
+              <div class="text-wrapper-2">Telepon</div>
+              <div class="text-wrapper-3">123-456-789</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="social-media">
+        <div class="text-wrapper-4">Social</div>
+        <div class="logo">
+          <img class="bxl-facebook" src="img/bxl-facebook.png" />
+          <img class="bxl-twitter" src="img/bxl-twitter.png" />
+          <div class="instagram-logo"></div>
+          <div class="youtube-logo"></div>
+          <img class="object" src="img/object.png" />
+        </div>
+      </div>
+      <div class="divider"></div>
+      <div class="about-us">
+        <div class="text-wrapper">About Us</div>
+        <p class="p">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec velit rutrum, convallis diam vel,
+          tristique lacus. Quisque id risus et metus consequat commodo. Sed id urna vitae justo placerat ultrices
+          sed vitae mi. Aliquam sagittis, ex sit amet fermentum pharetra, nisl nulla luctus elit, ac lacinia turpis
+          elit sed velit.
+        </p>
+      </div>
+      <div class="app-brand">
+        <div class="text-wrapper-5">JOEEN</div>
+        <img class="joeen-logo" src="./joeeen-logo.png" />
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
+
+<script>
+  const brand = document.getElementById('brand');
+
+  brand.addEventListener('click', function() {
+      window.location.href = "/";
+  });
+</script>
