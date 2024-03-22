@@ -1,7 +1,7 @@
-# JOEEN (read: Join)
+# JOEEN (read: join)
 
 ## Overview
-JOEEN (read: Join) is a website that provides recommendations for events, communities, books, songs, and movies to help young people develop both themselves and their surroundings.
+JOEEN (read: join) is a website that provides recommendations for events, communities, books, songs, and movies to help young people develop both themselves and their surroundings.
 
 With the content it offers, JOEEN aims to be a platform for young people to explore their interests and talents, as well as expand their knowledge in various aspects of life. With valuable information, JOEEN serves as a loyal companion for those who seek continuous growth and development.
 
