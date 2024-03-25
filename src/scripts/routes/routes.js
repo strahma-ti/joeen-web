@@ -9,6 +9,7 @@ import BooksDetail from '../views/Pages/BooksPage/BooksDetail';
 
 import MusicPage from '../views/Pages/MusicPage/MusicPage';
 import FilmPage from '../views/Pages/FilmPage/FilmPage';
+import FilmDetail from '../views/Pages/FilmPage/FilmDetail';
 
 const routes = {
   '/': HomePage, // default page
@@ -19,6 +20,8 @@ const routes = {
   '/books/detail': BooksDetail,
   '/music': MusicPage,
   '/film': FilmPage,
+  '/detail/:id': FilmDetail,
+
 };
 
 export default routes;
