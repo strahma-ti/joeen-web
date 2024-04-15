@@ -37,14 +37,17 @@ const SignupPage = {
        .login-image img {
           width:30em;
        }
-       .login-button button {
-          cursor: pointer;
+       .login-button a {
+          text-decoration: none;
           color: white;
           background-color: #FFB200;
-          border: none;
-          border-radius: 10px;
-          height: 3em;
+          cursor: pointer;
           width: 100%;
+          height: 3em;
+          border-radius: 10px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
        }
   
       .right-section {
@@ -185,7 +188,7 @@ const SignupPage = {
                               </div>
                           <div class="login-button">
                           <a href="#/onboarding1">
-                              <button>Sign Up</button>
+                              Sign Up
                           </a>
                           </div>
                       </form>
