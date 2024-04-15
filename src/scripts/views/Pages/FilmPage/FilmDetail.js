@@ -4,7 +4,7 @@ import TheMovieDbSource from '../../../data/themoviedb-source';
 const FilmDetail = {
   async render() {
     return `
-    <div class="film-search">
+    <div class="search-bar">
     <div class="search-filter">
       <div class="checkboxAll">
         <label for="allCheckbox">All</label>

@@ -11,6 +11,12 @@ class TheMovieDbSource {
     return allMovies;
   }
 
+  static async searchByGenre(genreId) {
+    const response = await fetch(API_ENDPOINT.MOVIE_API.DISCOVER(genreId));
+    const responseJson = await response.json();
+    return responseJson.results;
+  }
+
   static async popularMovies() {
     const response = await fetch(API_ENDPOINT.MOVIE_API.POPULAR);
     const responseJson = await response.json();

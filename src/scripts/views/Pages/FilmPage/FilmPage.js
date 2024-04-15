@@ -5,7 +5,7 @@ import '@fortawesome/fontawesome-free/css/all.css';
 const FilmPage = {
   async render() {
     return `
-    <div class="film-search">
+    <div class="search-bar">
       <div class="search-filter">
         <div class="checkboxAll">
           <label for="allCheckbox">All</label>
@@ -17,9 +17,6 @@ const FilmPage = {
         </div>
         <input type="text" id="searchInput" placeholder="Search movies...">
         <select id="genreDropdown" class="genre-dropdown">
-        </select>
-        <select id="keywordDropdown" class="keyword-dropdown">
-          <option value="calm">Calm</option>
         </select>
         <button id="searchButton" class="search-button"><i class="fa-solid fa-magnifying-glass"></i></button>
         </div>
@@ -46,14 +43,6 @@ const FilmPage = {
     const searchButton = document.getElementById('searchButton');
     searchButton.addEventListener('click', this.handleSearchButtonClicked.bind(this));
 
-    const searchInput = document.getElementById('searchInput');
-    searchInput.addEventListener('input', async () => {
-      const searchText = searchInput.value.trim();
-      if (searchText === '') {
-        await this.renderMoviesByCheckboxStatus();
-      }
-    });
-
     const genreDropdown = document.getElementById('genreDropdown');
     const genreList = await TheMovieDbSource.getGenreList();
     genreList.forEach((genre) => {
@@ -61,15 +50,6 @@ const FilmPage = {
       option.value = genre.id;
       option.textContent = genre.name;
       genreDropdown.appendChild(option);
-    });
-
-    const keywordDropdown = document.getElementById('keywordDropdown');
-    const keywordList = await TheMovieDbSource.getKeywordList();
-    keywordList.forEach((keyword) => {
-      const option = document.createElement('option');
-      option.value = keyword.id;
-      option.textContent = keyword.name;
-      keywordDropdown.appendChild(option);
     });
 
     const allCheckbox = document.getElementById('allCheckbox');
@@ -114,9 +94,12 @@ const FilmPage = {
 
   async handleSearchButtonClicked() {
     const searchInput = document.getElementById('searchInput').value;
-    if (searchInput) {
-      const searchResult = await TheMovieDbSource.searchMovies(searchInput);
-      const searchResultContainer = document.querySelector('.film-section');
+    const genreDropdown = document.getElementById('genreDropdown');
+    const selectedGenre = genreDropdown.value;
+    const searchResultContainer = document.querySelector('.film-section');
+
+    if (searchInput || selectedGenre) {
+      const searchResult = await TheMovieDbSource.searchMovies(searchInput, selectedGenre);
       searchResultContainer.innerHTML = `
         <div class="search-result">
           <h3>Search Result for "${searchInput}"</h3>
@@ -155,24 +138,25 @@ const FilmPage = {
     const showUpcoming = upcomingCheckbox.checked;
 
     if (showAll) {
+      const filmSection = document.querySelector('.film-section');
+      filmSection.innerHTML = '<h2>All Film for you</h2>';
       await this.renderAllMovies();
     } else if (showUpcoming) {
+      const filmSection = document.querySelector('.film-section');
+      filmSection.innerHTML = '<h2>Upcoming Film for you</h2>';
       await this.renderUpcomingMovies();
     } else {
-      // Jika tidak ada checkbox yang dicentang, render film populer dan sedang diputar
       await this.renderPopularMovies();
       await this.renderNowplayingMovies();
     }
   },
 
   async renderAllMovies() {
-    // Render semua film di sini
     const allMovies = await TheMovieDbSource.allMovies();
     this.renderMovieList(allMovies);
   },
 
   async renderUpcomingMovies() {
-    // Render film yang akan datang di sini
     const upcomingMovies = await TheMovieDbSource.upcomingMovies();
     this.renderMovieList(upcomingMovies);
   },
