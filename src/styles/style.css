@@ -4,7 +4,7 @@
 }
  
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Roboto', sans-serif;
   background-color: white;
   min-height: 100vh;
   display: flex;
@@ -26,6 +26,10 @@ body {
   top: 0;
   z-index: 99;
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+}
+
+.hidden {
+  display: none;
 }
  
 .app-bar .app-bar__menu {
@@ -146,7 +150,7 @@ main {
 .footer .overlap {
   position: relative;
   height: 475px;
-  background-color: #87a9c1;
+  background-color: #164DA0;
 }
 
 .footer .element-bug-buster {
@@ -157,7 +161,7 @@ main {
   opacity: 0.65;
   font-family: "Roboto-Bold", Helvetica;
   font-weight: 700;
-  color: #353c4b;
+  color: white;
   font-size: 14px;
   text-align: center;
   letter-spacing: 0;
@@ -179,7 +183,7 @@ main {
   left: 0;
   font-family: "Roboto-Bold", Helvetica;
   font-weight: 700;
-  color: #353c4b;
+  color: white;
   font-size: 18px;
   letter-spacing: 0;
   line-height: normal;
@@ -192,7 +196,7 @@ main {
   left: 0;
   font-family: "Roboto-Regular", Helvetica;
   font-weight: 400;
-  color: #353c4b;
+  color: white;
   font-size: 13px;
   letter-spacing: 0;
   line-height: 30px;
@@ -213,7 +217,7 @@ main {
   left: 0;
   font-family: "Roboto-Bold", Helvetica;
   font-weight: 700;
-  color: #353c4b;
+  color: white;
   font-size: 18px;
   letter-spacing: 0;
   line-height: normal;
@@ -246,7 +250,7 @@ main {
   opacity: 0.7;
   font-family: "Roboto-Regular", Helvetica;
   font-weight: 400;
-  color: #353c4b;
+  color: white;
   font-size: 14px;
   letter-spacing: 0;
   line-height: normal;
@@ -259,7 +263,7 @@ main {
   left: 97px;
   font-family: "Roboto-Bold", Helvetica;
   font-weight: 700;
-  color: #353c4b;
+  color: white;
   font-size: 14px;
   letter-spacing: 0;
   line-height: normal;
@@ -288,7 +292,7 @@ main {
   left: 0;
   font-family: "Roboto-Bold", Helvetica;
   font-weight: 700;
-  color: #353c4b;
+  color: white;
   font-size: 18px;
   letter-spacing: 0;
   line-height: normal;
@@ -352,7 +356,7 @@ main {
   height: 4px;
   top: 380px;
   left: 126px;
-  background-color: #353c4b;
+  background-color: white;
   border: 1px solid;
   opacity: 0.2;
 }
@@ -372,7 +376,7 @@ main {
   left: 0;
   font-family: "Roboto-Regular", Helvetica;
   font-weight: 400;
-  color: #353c4b;
+  color: white;
   font-size: 13px;
   letter-spacing: 0;
   line-height: normal;
@@ -392,7 +396,7 @@ main {
   left: 72px;
   font-family: "Poppins-ExtraBold", Helvetica;
   font-weight: 800;
-  color: #353c4b;
+  color: white;
   font-size: 50px;
   letter-spacing: 0;
   line-height: normal;
