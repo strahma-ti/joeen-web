@@ -19,13 +19,15 @@ body {
 .app-bar {
   padding: 8px 16px;
   background-color: white;
-  display: grid;
+  display: flex;
   grid-template-columns: auto 1fr auto;
   gap: 10px;
   position: sticky;
   top: 0;
   z-index: 99;
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+  align-items: center;
+  flex-direction: row;
 }
 
 .hidden {
@@ -99,6 +101,7 @@ body {
 
 .app-bar .app-bar__navigation ul {
   text-align: center;
+  display: flex;
 }
 
 
