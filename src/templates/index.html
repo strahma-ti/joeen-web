@@ -102,6 +102,17 @@
   const brand = document.getElementById('brand');
 
   brand.addEventListener('click', function() {
-      window.location.href = "/";
+      window.location.href = "/#/homepage";
   });
+
+  const appBar = document.querySelector('.app-bar');
+
+window.addEventListener('scroll', () => {
+  if (window.scrollY > 0) {
+    appBar.classList.add('shadow');
+  } else {
+    appBar.classList.remove('shadow');
+  }
+});
+
 </script>

@@ -154,6 +154,7 @@ const HomePage = {
     }
 
     .bottom-section{
+      color: #353C4B;
       gap: 5px;
       display: flex;
       padding: 10px;
@@ -165,6 +166,10 @@ const HomePage = {
       font-size: larger;
     }
 
+    .description p{
+      opacity: 70%;
+    }
+
     .date p{
       font-weight: bolder;
       opacity: 50%;
@@ -172,9 +177,10 @@ const HomePage = {
 
     .recom-section{
       margin-left: 3em;
-      margin-right: 3em;  
+      margin-right: 3em;
+      color: #353C4B;
     }
-
+    
     .recom-section h1{
       font-size: 35px;
       padding-bottom:0;
@@ -190,6 +196,11 @@ const HomePage = {
 
     .recom-section h2{
       font-size: 30px;
+    }
+
+    .community-detail{
+      text-decoration: none;
+      color: #000;
     }
     </style>
     <div class="homepage">
@@ -232,9 +243,10 @@ const HomePage = {
               <p><a href="/#/events">See all</a></p>
               </div>
               <div class="card-list">
+                <a href="/#/eventdetail" class="community-detail" target="_blank">
                 <div class="card">
                   <div class="image">
-                    <img src="https://tinypic.host/images/2024/04/15/imagea5f4b8d9196543db.png" alt="imagea5f4b8d9196543db.png" border="0">
+                  <img src="https://tinypic.host/images/2024/04/16/image.png" alt="image.png" border="0">                  
                   </div>
                   <div class="top-section">
                     <div class="location">
@@ -246,17 +258,18 @@ const HomePage = {
                   </div>
                   <div class="bottom-section">
                     <div class="date">
-                      <p>19 MARCH, 2024</p>
+                      <p>21 APRIL, 2024</p>
                     </div>
                     <div class="name">
-                      <p>Tech Talks: Exploring AI..</p>
+                      <p>Handmade Soap Making....</p>
                     </div>
                     <div class="description">
-                      <p>Dive into the world of artificial<br>
-                      intelligence and its impact...</p>
+                      <p>DJoin us for an immersiv<br>
+                      Handmade Soap Making Class!...</p>
                     </div>
                   </div>
                 </div>
+                </a>
                 <div class="card">
                   <div class="image">
                     <img src="https://tinypic.host/images/2024/04/15/image7e7a861878cc8c77.png" alt="image7e7a861878cc8c77.png" border="0">                  
@@ -410,6 +423,7 @@ const HomePage = {
                     </div>
                   </div>
                 </div>
+                <a href="/#/communitydetail" class="community-detail" target="_blank">
                 <div class="card">
                   <div class="image">
                   <img src="https://tinypic.host/images/2024/04/15/image7c993b87ee89791baf1a293c473526ba.png" alt="image7c993b87ee89791baf1a293c473526ba.png" border="0">
@@ -432,6 +446,7 @@ const HomePage = {
                     </div>
                   </div>
                 </div>
+                </a>
             </div>
           </div>
 
@@ -622,6 +637,7 @@ const HomePage = {
                     </div>
                   </div>
                 </div>
+                <a href="/#/booksdetail" class="community-detail">
                 <div class="card">
                   <div class="image">
                   <img src="https://tinypic.host/images/2024/04/15/imagee610dc755a07693c.png" alt="imagee610dc755a07693c.png" border="0">                  
@@ -645,6 +661,7 @@ const HomePage = {
                     </div>
                   </div>
                 </div>
+                </a>
             </div>
           </div>
 
@@ -780,6 +797,7 @@ const HomePage = {
                 </div>
               </div>
             </div>
+            <a href="/#/detail/581387" class="community-detail" target="_blank">
             <div class="card">
               <div class="image">
               <img src="https://tinypic.host/images/2024/04/15/imagea72b4bd139e8f4f3.png" alt="imagea72b4bd139e8f4f3.png" border="0">              
@@ -803,6 +821,7 @@ const HomePage = {
                 </div>
               </div>
             </div>
+            </a>
             <div class="card">
               <div class="image">
               <img src="https://tinypic.host/images/2024/04/15/imageae863b4d86bbc638.png" alt="imageae863b4d86bbc638.png" border="0">              

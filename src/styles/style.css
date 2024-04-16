@@ -16,29 +16,39 @@ body {
   AppBar
 */
  
+body {
+  margin: 0;
+  padding: 0;
+}
+
 .app-bar {
   padding: 8px 16px;
-  background-color: white;
+  background-color: white; 
   display: flex;
   grid-template-columns: auto 1fr auto;
   gap: 10px;
   position: sticky;
   top: 0;
   z-index: 99;
-  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
   align-items: center;
   flex-direction: row;
+  transition: background-color 0.3s, box-shadow 0.3s; 
+}
+
+.app-bar.shadow {
+  background-color: white; 
+  box-shadow: 0 16px 40px #9aaacf33;
 }
 
 .hidden {
   display: none;
 }
- 
+
 .app-bar .app-bar__menu {
   display: flex;
   align-items: center;
 }
- 
+
 .app-bar .app-bar__menu button {
   background-color: transparent;
   border: none;
@@ -46,16 +56,11 @@ body {
   padding: 8px;
   cursor: pointer;
 }
- 
+
 .app-bar .app-bar__brand {
   display: flex;
   align-items: center;
 }
-
-/* .app-bar__brand a {
-  text-decoration: none;
-
-} */
 
 .app-bar__brand img {
   width: 50px;
@@ -63,17 +68,17 @@ body {
   margin-right: 5px;
   cursor: pointer;
 }
- 
+
 .app-bar .app-bar__brand h1 {
   font-family: 'Poppins', sans-serif;
   color: #353C4B;
-  font-weight:900;
+  font-weight: 900;
   text-transform: uppercase;
   font-size: 22px;
   user-select: none;
   cursor: pointer;
 }
- 
+
 .app-bar .app-bar__navigation {
   position: absolute;
   top: 50px;
@@ -84,18 +89,18 @@ body {
   background-color: white;
   overflow: hidden;
 }
- 
+
 .app-bar .app-bar__navigation.open {
   left: 0;
 }
- 
+
 .app-bar .app-bar__navigation ul li a {
   display: inline-block;
   text-decoration: none;
   color: #353C4B;
   padding: 5px;
   margin-bottom: 5px;
-  width:fit-content;
+  width: fit-content;
   text-align: center;
 }
 
@@ -104,19 +109,19 @@ body {
   display: flex;
 }
 
-
 .avatar {
-  width: 30px; 
-  height: 30px; 
+  width: 30px;
+  height: 30px;
   padding: 5px;
-  background-image: url('../public/avatar1.png'); 
-  background-size: cover; 
-  background-position: center; 
-  border-radius: 50%; 
+  background-image: url('../public/avatar1.png');
+  background-size: cover;
+  background-position: center;
+  border-radius: 50%;
   border: 2px solid #353C4B;
   display: inline-block;
-  margin-right: 8px; 
+  margin-right: 8px;
 }
+
  
 /*
   Main Content
