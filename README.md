@@ -40,12 +40,3 @@ In the project directory, you can run the following scripts:
 
 - npm start: Runs the app in development mode.
 - npm build: Builds the app for production using Webpack.
-
-## Contributing
-
-- Debina Putri Stevani
-- Siti Rahmah
-- Adeline Veronica Manoy
-- Maulina Safitri
-- Michael Antoni Siregar
-- Addin Amanatullah Suparjo
