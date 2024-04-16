@@ -6,7 +6,9 @@ import Onboarding2Page from '../views/Pages/LoginPage/OnboardingPage2';
 
 import HomePage from '../views/Pages/Homepage/HomePage';
 import EventsPage from '../views/Pages/EventsPage/EventsPage';
+import EventsDetail from '../views/Pages/EventsPage/EventsDetail';
 import CommunityPage from '../views/Pages/CommunityPage/CommunityPage';
+import CommunityDetail from '../views/Pages/CommunityPage/CommunityDetail';
 import VolunteerPage from '../views/Pages/VolunteerPage/VolunteerPage';
 
 import BooksPage from '../views/Pages/BooksPage/BooksPage';
@@ -23,10 +25,12 @@ const routes = {
   '/onboarding2': Onboarding2Page,
   '/homepage': HomePage,
   '/events': EventsPage,
+  '/eventdetail': EventsDetail,
   '/community': CommunityPage,
+  '/communitydetail': CommunityDetail,
   '/volunteer': VolunteerPage,
   '/books': BooksPage,
-  '/books/detail': BooksDetail,
+  '/booksdetail': BooksDetail,
   '/music': MusicPage,
   '/film': FilmPage,
   '/detail/:id': FilmDetail,
