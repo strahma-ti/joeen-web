@@ -210,6 +210,11 @@ main {
   line-height: 30px;
 }
 
+.navigation a{
+  text-decoration: none;
+  color: white;
+}
+
 .footer .contact {
   position: absolute;
   width: 245px;

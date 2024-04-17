@@ -18,6 +18,22 @@ const FilmDetail = {
       <select id="genreDropdown" class="genre-dropdown">
       </select>
       <select id="keywordDropdown" class="keyword-dropdown">
+        <option value="happy">Happy</option>
+        <option value="sad">Sad</option>
+        <option value="angry">Angry</option>
+        <option value="excited">Excited</option>
+        <option value="relaxed">Relaxed</option>
+        <option value="stressed">Stressed</option>
+        <option value="confused">Confused</option>
+        <option value="surprised">Surprised</option>
+        <option value="motivated">Motivated</option>
+        <option value="bored">Bored</option>
+        <option value="hopeful">Hopeful</option>
+        <option value="anxious">Anxious</option>
+        <option value="content">Content</option>
+        <option value="grateful">Grateful</option>
+        <option value="nostalgic">Nostalgic</option>
+        <option value="lonely">Lonely</option>
       </select>
       <button id="searchButton" class="search-button"><i class="fa-solid fa-magnifying-glass"></i></button>
       </div>

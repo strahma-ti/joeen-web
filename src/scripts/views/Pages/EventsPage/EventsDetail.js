@@ -180,8 +180,34 @@ const EventsDetail = {
             </div>
             <input type="text" id="searchInput" placeholder="Enter keyword...">
             <select id="genreDropdown" class="genre-dropdown">
+              <option value="art">Art</option>
+              <option value="book">Book</option>
+              <option value="">Business</option>
+              <option value="">Crafts</option>
+              <option value="">Dancing</option>
+              <option value="">Education</option>
+              <option value="">Environment</option>
+              <option value="">Fitness</option>
+              <option value="">Food & Drink</option>
+              <option value="">Games for Funrt</option>
+              <option value="">Hair & Beauty</option>
+              <option value="">Health</option>
+              <option value="">Hobbies</option>
             </select>
             <select id="genreDropdown" class="genre-dropdown">
+              <option value="">Aceh</option>
+              <option value="">Bali</option>
+              <option value="">Bandung</option>
+              <option value="">Batam</option>
+              <option value="">Bekasi</option>
+              <option value="">Bogor</option>
+              <option value="">Denpasar</option>
+              <option value="">Jakarta</option>
+              <option value="">Jambi</option>
+              <option value="">Jayapura</option>
+              <option value="">Kalimantan</option>
+              <option value="">Lampung</option>
+              <option value="">Lombok</option>
             </select>
             <button id="searchButton" class="search-button"><i class="fa-solid fa-magnifying-glass"></i></button>
             </div>
